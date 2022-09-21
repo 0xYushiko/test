@@ -5,6 +5,7 @@ html{
 body{
     height: 100%;
     margin: 0;
+    background: #FEF5EC;
 }
 
 .global{
@@ -60,7 +61,7 @@ li{
 }
 
 .nav_accueil:hover{
-    background: #CCC8D0;
+    background: #CCC2FF;
     border-radius: 6px;
 }
 
@@ -82,13 +83,62 @@ li{
 }
 
 .hover_icon:hover{
-    background: #CCC8D0;
+    background: #CCC2FF;
     border-radius: 10px;
 }
 
 .icon{
     width: 32px;
     height: 32px;
+}
+
+.btn-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #565264;
+    border-radius: 10px;   
+    cursor: pointer;
+}
+
+.btn-toggle:hover {
+    background: #CCC2FF;
+    border-radius: 10px;
+}
+
+body.dark {
+    color: #FEF5EC;
+    background: #37363b;
+}
+
+body.dark .btn-toggle {
+    border: 3px solid #FEF5EC;
+}
+
+body.dark .logo {
+    color:#FEF5EC;
+}
+
+body.dark ul {
+    border: 3px solid #FEF5EC;
+}
+
+body.dark .nav_accueil {
+    color:#FEF5EC;
+}
+
+body.dark .hover_icon {
+    border: 3px solid #FEF5EC;
+}
+
+body.dark .text_bienvenue {
+    color: #FEF5EC;
+}
+
+body.dark .footer {
+    color: #FEF5EC;
 }
 
 .bienvenue{
@@ -111,11 +161,15 @@ li{
 
 .ligne{
     text-decoration-line: underline;
-    text-decoration-color: #CCC8D0;
+    text-decoration-color: #CCC2FF;
     text-decoration-thickness: 15px;
 }
 
-footer{
+.color_text{
+    color: #CCC2FF;
+}
+
+.footer{
     width: 100%;
     position: absolute;
     bottom: 0;
